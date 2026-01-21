@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 title Furina's Master Command Center 🎭
 set "current_version=1.0"
-set "repo_url=https://raw.githubusercontent.com/[ชื่อUserพี่]/[ชื่อRepoพี่]/main"
+set "repo_url=https://raw.githubusercontent.com/ailovegenshinyt/Furina-Multi-Tools/main"
 
 :: --- 1. เช็กการอัปเดตเวอร์ชัน ---
 powershell -Command "Invoke-WebRequest -Uri '%repo_url%/version.txt' -OutFile 'v_check.txt'" >nul 2>&1
