@@ -1,4 +1,11 @@
 @echo off
+python --version >nul 2>&1
+if %errorlevel% equ 0 (
+    echo ✨ Python detected! Launching the Python version...
+    python furina_tool.py
+) else (
+    echo ✨ Python not found. Using the Classic Batch version...
+    @echo off
 setlocal enabledelayedexpansion
 title Furina's Master Command Center 🎭
 set "current_version=1.0"
@@ -58,3 +65,5 @@ if defined tool_name[%choice%] (
 )
 goto menu
 
+
+)
